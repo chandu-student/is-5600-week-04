@@ -8,6 +8,7 @@ const port = process.env.PORT || 3000
 const app = express()
 // Register the public directory
 app.use(express.static(__dirname + '/public'));
+
 // register the routes
 app.get('/products', listProducts)
 app.get('/', handleRoot);
